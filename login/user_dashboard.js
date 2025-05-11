@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var user_details = JSON.parse(localStorage.getItem("current_user"));
 
+
     if (!user){
         window.location.href = "login_page.html"
     } else {
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const favourites = JSON.parse(localStorage.getItem('favourites')) || {
         food: [],
         hotel: [],
-        activity: []
+        activities: []
     };
 
     const bookmarksContainer = document.querySelector('.bookmarks');
@@ -64,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Render activities favourites
-    if (favourites.activity && favourites.activity.length > 0) {
-        favourites.activity.forEach(id => {
+    if (favourites.activities && favourites.activities.length > 0) {
+        favourites.activities.forEach(id => {
             renderCard("activities", id, activity_data[id]);
         });
     }
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (
         favourites.food.length === 0 &&
         favourites.hotel.length === 0 &&
-        favourites.activity.length === 0
+        favourites.activities.length === 0
     ) {
         const msg = document.createElement('p');
         msg.textContent = 'No favourites added yet.';
