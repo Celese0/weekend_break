@@ -2,7 +2,7 @@
 
 
 var parameter = new URLSearchParams(window.location.search);
-var activity_type = parameter.get("activity")
+var activity_type = parameter.get("place")
 
 
 if (activity_type && activity_data[activity_type]) {
