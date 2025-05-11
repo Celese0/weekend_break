@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+       
+
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="user_dashboard.css">
+
+        
+
+    </head>
+
+    <body>    
+
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../homepage.html'">
+                <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div id="page_break"></div>
+
+
+        <div class="main_content">
+            <div class="filters">
+                <div onclick="changeContent('bookmarks_selected')">
+                    <p>Bookmarks</p> 
+                </div>
+                <div onclick="changeContent('user_info_selected')">
+                    <p>Edit User Details</p> 
+                </div>
+
+
+            
+            </div>
+
+            <div class="content">
+
+                <div class="bookmarks_selected">
+                    <div class="bookmarks_selection">
+                        <h2>View your saved bookmarks</h2>
+                    </div>
+
+                    <div class="bookmarks">
+                        
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="user_info_selected">
+                    <h2>Edit your user information</h2>
+
+                    <div class ="login_form">
+                        <form id="form_id" method="post" name="myform">
+
+                            <div class="section">
+                                <label> User Name: </label>
+                                <input type="text" name="username" id="username" value=""/>
+                            </div>
+
+                            <div class="section">
+                            <label> Password: </label>
+                                <input type="text" name="password" id="password"/> 
+                            </div>
+                            
+                            
+                            <input type="button" value="Update details" id="submit" onclick="editDetails()"/>
+                        </form>
+                    </div>
+
+                    
+                </div>
+
+                
+
+            </div>
+
+           
+            
+
+        </div>
+
+        <script type="text/javascript" src="../activities/activity_data.js"></script>
+        <script type="text/javascript" src="../food/food_data.js"></script>
+        <script type="text/javascript" src="../hotel/hotel_data.js"></script>
+        
+
+       
+        <script type="text/javascript" src="user_dashboard.js"></script>
+        
+
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+
+
+    </body>
+
+
+</html>

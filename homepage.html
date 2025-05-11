@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="homepage.css">
+
+        <!-- https://colorhunt.co/palette/eeedebe6b9a69391852f3645 --> 
+
+
+    </head>
+
+    <body>
+        
+        <div class="nav_bar">
+            <div style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;" id="home" onclick="window.location.href='homepage.html'">
+               <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="activities/activities_page.html">Activities</a>
+                <a href="food/food_page.html">Food</a>
+                <a href="hotel/hotel_page.html">Hotel</a>
+                <a href="people/people_page.html">People</a>
+                <a href="recipes/recipes_page.html">Recipes</a>
+                <a href="map/map_page.html">Map</a>
+                <a id="login_button" href="login/login_page.html">Login</a>
+            </div>
+        </div>
+        <div class="body_background"></div>
+        <div class="main_body">
+            <h2>Visit</h2>
+            <h1 id="welcome">Cheshire</h1>
+            <button id="continue"  onclick="window.location.href='activities/activities_page.html' ">
+            <p>Find all there is to do</p>
+            </button>
+            <img id="next_arrow" src="images/arrow.png"></img>
+            <p id="discover_more">Discover more below</p>
+        </div> 
+        
+        <div id="page_break"></div>
+        
+
+        <div class="main_information">
+            <img id="cheshire_map_image" src="images/cheshire_map.png"></img>
+            <p id="cheshire_text">Cheshire is a historic county in northwest England, 
+                known for its picturesque countryside, charming villages, and rich heritage. 
+                It borders Wales and includes towns like Chester, famous for its Roman walls and 
+                medieval architecture. The region has strong agricultural roots, particularly in dairy 
+                farming—hence the well-known Cheshire cheese. Cheshire is also home to affluent areas such 
+                as Alderley Edge and Wilmslow. Its landscape features rolling hills, canals, and parts of the Peak District. 
+                The county blends rural charm with modern prosperity and cultural depth.
+            </p>
+        </div>
+        <button id="more_info_button" onclick="window.location.href ='map/map_page.html'">Click here to view some key places in Cheshire</button>
+        
+        
+
+        
+
+
+
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+
+
+    </body>
+
+
+
+</html>

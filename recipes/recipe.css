@@ -1,0 +1,124 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: #2F3645;
+}
+
+.recipe{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.recipe > * {
+    margin: 0 30px;
+}
+
+.recipe_images {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    outline: 2px solid #adaca5;
+    background-color: #eeedeb;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.image_container{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    width:90%
+
+}
+
+.image{
+
+    object-fit: contain;
+    width: 100%;
+    margin: 50px;
+    outline: 5px outset silver;
+    
+}
+
+.image_select {
+    outline: 2px solid #e6b9a6;
+    justify-content: space-around;
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: #edcdbf;
+}
+
+.recipe_description{
+    outline:2px solid #adaca5;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    align-items: center;
+    width: 50%;
+    background-color: #eeedeb;
+    border-radius: 10px;
+}
+
+
+.recipe_description h1,
+.recipe_description h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.recipe_description .description{
+    width: 80%;
+    font-size: 20px;
+}
+
+.recipe_instructions{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 10px;
+    background-color: #eeedeb;
+    outline: 5px solid #adaca5;
+}
+
+.instructions{
+    outline: 2px solid #e6b9a6;
+    width: 50%;
+    height: max-content;
+    background-color: #edcdbf;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.ingredients{
+    outline: 2px solid #e6b9a6;
+    height: max-content;
+    background-color: #edcdbf;
+    border-radius: 10px;
+    line-height: 25px;
+    width: 20%;
+    margin-right: 40px;
+}
+
+.image_select button {
+    padding: 5px 20px;
+    background-color: #edcdbf;
+    box-shadow: 2px 2px 8px rgb(131 64 45 / 26%);
+    outline: 2px solid #2f364596;
+    border-color: #2f364596;
+    margin: 10px;
+}
+
+
+

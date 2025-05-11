@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="map.css">
+    </head>
+
+    <body>
+
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../homepage.html'">
+                <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;" href="../map/map_page.html">Map</a>
+                <a id="login_button" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+        <h1 id="title">An interactable gallery showcasing the beauty of Cheshire</h1>
+        <div class="main_map">
+            
+            <div class="map">
+                <div class="map_container">
+                   <img id="cheshire_map" src="cheshire-map.jpg">
+
+                    <div class="map_pin" style="top: 10%; left: 15%;" onmouseenter="showArea(0, event)" onmouseleave="hideArea()" onclick="updateInfo(0)"></div>
+                    <div class="map_pin" style="top: 23%; left: 64%;" onmouseenter="showArea(1, event)" onmouseleave="hideArea()" onclick="updateInfo(1)"></div>
+                    <div class="map_pin" style="top: 82%; left: 17%;" onmouseenter="showArea(2, event)" onmouseleave="hideArea()" onclick="updateInfo(2)"></div>
+                    <div class="map_pin" style="top: 95%; left: 97%;" onmouseenter="showArea(3, event)" onmouseleave="hideArea()" onclick="updateInfo(3)"></div> 
+
+                    <div id="area_box">
+                        <div id="area_name"></div>
+                        <div id="area_address"></div>
+                        <div id="area_description"></div>
+                    </div>
+
+                </div>
+
+                
+
+                <div>
+                    <p id="place_name">Place name</p>
+                </div>
+
+
+            </div>
+
+            <div class="map_description">
+                <h1>Then and now</h1>
+                <div class="image_container">
+                    <img id="image_then"  >
+                    <img id="image_now"  >
+
+
+                    <h3 id="initial_text">Take a look at various pictures from places in Cheshire, 
+                        showcasing what they used to look like and what they look like now. Move the slider
+                        to see the change</h3>
+                    
+                </div>
+
+                <div>
+                    <input id="slider" type="range" min="0" max="1" step="0.01" value="0" >
+                </div>
+                <div class="description_container">
+                    <p id="place_description">Brief description of the place in the past</p>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript" src="map.js"></script>
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+        
+    </body>
+
+</html>

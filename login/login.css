@@ -1,0 +1,93 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: #2F3645;
+}
+
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.welcome h1{
+    margin: 0;
+}
+
+
+
+.login_form{
+    display: flex;
+    outline: 2px solid #E6B9A6;
+    flex-direction: column;
+    justify-self: center;
+    padding: 10px;
+    width: 40%;
+    background-color: #EEEDEB;
+    border-radius: 10px;
+    margin-top:10px;
+}
+
+
+#form_id{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    color: #2F3645;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #edcdbf;
+    border-radius: 10px;
+    width: 80%;
+    color: #2F3645;
+}
+
+.section input {
+    background: #ffffff;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.section label {
+    font-size: large;
+}
+
+#submit {
+    border: 2px solid #E6B9A6;
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: #edcdbf;
+    color: #2F3645;
+    font-size: medium;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+}
+
+.welcome div {
+    background-color: #ebeae7;
+    width: 90%;
+    text-align: center;
+    outline: 4px solid #edcdbf;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}

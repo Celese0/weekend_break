@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="person.css">
+
+    </head>
+    
+    <div class="nav_bar">
+        <div id="home" onclick="window.location.href='../homepage.html'">
+           <p>Home</p> 
+        </div>
+
+        <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+
+        <body>
+            
+            
+
+        <div class="main_part">
+
+            <div class="left">
+                <div class="image_container">
+                    <img id="image" src=""></img>
+                
+                </div>
+                <h2 id="info"> info</h2>
+            </div>
+            
+
+            <div class="description">
+
+                <div class="name">
+                    <h1>About</h1>
+                    <h1 id="name"></h1>
+                </div>
+                
+                <h3 id="description">Person Description</h3>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script type="text/javascript" src="people_data.js"></script>
+
+        <script>
+        var user = localStorage.getItem("current_user");
+
+
+        if(user){
+            document.getElementById("login_button").innerHTML = "Dashboard"
+        }
+        </script>
+
+
+        </body>
+
+
+</html>

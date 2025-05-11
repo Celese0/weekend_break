@@ -1,0 +1,139 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: #2F3645;
+}
+
+
+#welcome{
+    color: #2F3645;
+    font-size: 100px;
+
+}
+
+.body_background{
+    position: absolute;
+    height: 80.6vh;
+    width: 100%;
+    background-image: url("images/castle_background.png") ;
+    z-index: -1;
+}
+
+.main_body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    outline: 2px solid rgba(237, 205, 191, 0.7);
+    margin:17vh 0px ;
+    background-color: rgba(237, 205, 191, 0.7);
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.main_body > * {
+    margin:5px;
+}
+
+#continue{
+    border: none;
+    margin:90px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    outline: 2px solid #E6B9A6;
+    background-color: #EEEDEB;
+    cursor: pointer;
+    transition: transform 0.05s;
+}
+
+#continue:hover{
+    transform: scale(1.05);
+
+}
+
+.main_body #continue:hover ~ #next_arrow{
+    transform: translate(3px, 0px);
+}
+
+#next_arrow{
+    margin-bottom: 50px;
+    width: 30px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+
+#discover_more{
+    margin-bottom: 25px;
+    padding: 10px;
+
+    background-color: rgba(238, 237, 235, 0.8);
+    color: #2F3645;
+    
+}
+
+
+.main_information{
+    display:flex;
+    justify-content: space-between;
+}
+
+.main_information > * {
+
+    margin:5px;
+    padding: 50px;
+    align-content: center;
+}
+
+#cheshire_map_image{
+    width: 50%;
+    aspect-ratio: auto;
+    display: block;
+}
+
+#cheshire_text{
+    flex:30%;
+    font-size: larger;
+    outline: 2px solid #eeedeb;
+    background-color: #f4edea;
+    border-radius: 5px;
+    height: 80%;
+    align-self: center;
+    margin-right: 30px;;
+
+}
+
+#more_info_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 8px;
+    margin-bottom: 50px;
+    background-color: #f4edea;
+    border: none;
+    border: solid #E6B9A6;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+#more_info_button:hover{
+    transform: scale(1.05);
+}
+
+#page_break{
+    outline: 2px solid #2F3645;
+    margin: 3vh 0;
+    width: 99%;
+    height:1px;
+    background-color: #2F3645;
+    justify-self: center;
+    border-radius: 10px;
+}

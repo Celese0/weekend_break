@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="login.js"></script>
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+        
+
+    <body>
+
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../homepage.html'">
+                <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;"  href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <div>
+                <p>Welcome to</p>
+                <h1>Cheshire</h1> 
+            </div>
+            
+            <br>
+            <p>Login to see your dashboard</p>
+        </div>
+
+        <div class ="login_form">
+            <form id="form_id" method="post" name="myform">
+
+                <div class="section">
+                    <label> User Name: </label>
+                    <input type="text" name="username" id="username"/>
+                </div>
+
+                <div class="section">
+                   <label> Password: </label>
+                    <input type="password" name="password" id="password"/> 
+                </div>
+                
+                
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
+            </form>
+        </div>
+
+        
+
+    </body>
+
+
+
+
+</html>

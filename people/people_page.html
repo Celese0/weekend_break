@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="people.css">
+
+    </head>
+
+    <body>
+
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../homepage.html'">
+                <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;" href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+
+
+        <div class="header_text">
+            <h1>Meet people part of Cheshire's history</h1>
+            <p>Hover over an image to get started</p>
+        </div>
+
+        <div class ="cards">
+
+            <div class="single_card">
+
+                <div class="card_info" onclick="window.location.href='person.html?person=person1'">
+
+                    <img src="images/daniel_craig.png">
+                    <p class="text_overlay">Daniel Craig is an English actor best known for his role as 
+                        James Bond in the iconic spy film series. His portrayal of the character 
+                        brought a more gritty and modern edge to the role.</p>
+                </div>
+
+                <div class="person_info">
+                    <h2>Daniel Craig </h2>
+                    <a href="person.html?person=person1">learn more</a>      
+                </div>
+                
+            </div>
+
+            <div class="single_card" >
+
+                <div class="card_info" onclick="window.location.href='person.html?person=person2'">
+
+                    <img src="images/tim_curry.png">
+                    <p class="text_overlay">Tim Curry is an iconic British actor, known for his captivating roles in 
+                        The Rocky Horror Picture Show and It.
+                        His voice and diverse performances have made him a beloved figure in film and television.</p>
+                </div>
+                
+                <div class="person_info">
+                    <h2>Tim Curry</h2>
+                    <a href="person.html?person=person2">learn more</a>      
+                </div>
+            </div>
+
+            <div class="single_card">
+                
+                <div class="card_info" onclick="window.location.href='person.html?person=person3'">
+
+                    <img src="images/paula_radcliffe.jpg">
+                    <p class="text_overlay">Paula Radcliffe is a retired British long-distance runner, 
+                        renowned for holding the women's marathon world record. 
+                        She is widely considered one of the greatest female marathoners of all time.</p>
+                </div>
+                
+                <div class="person_info">
+                    <h2>Paula Radcliffe</h2>
+                    <a href="person.html?person=person3">learn more</a>     
+                </div>
+            </div>
+
+            <div class="single_card">
+                
+                <div class="card_info" onclick="window.location.href='person.html?person=person4'">
+
+                    <img src="images/gary_barlow.jpg">
+                    <p class="text_overlay">Gary Barlow is an English singer, songwriter, 
+                        and musician, best known as a member of the pop group Take That. 
+                        He is celebrated for his powerful voice and successful solo career.</p>
+                </div>
+                
+                <div class="person_info">
+                    <h2>Gary Barlow</h2>
+                    <a href="person.html?person=person4">learn more</a>       
+                </div>
+            </div>
+
+            <div class="single_card">
+                
+                <div class="card_info" onclick="window.location.href='person.html?person=person5'">
+
+                    <img src="images/michael_owen.jpg">
+                    <p class="text_overlay">Michael Owen is a retired English footballer, renowned for his speed and goal-scoring ability, 
+                        and for playing with top clubs like Liverpool, Real Madrid, and Manchester United.</p>
+                </div>
+                
+                <div class="person_info">
+                    <h2>Michael Owen</h2>
+                    <a href="person.html?person=person5">learn more</a>       
+                </div>
+            </div>
+
+            <div class="single_card">
+                
+                <div class="card_info" onclick="window.location.href='person.html?person=person6'">
+
+                    <img src="images/lewis_carrol.jpg">
+                    <p class="text_overlay">Lewis Carroll, the pen name of Charles Lutwidge Dodgson, was an English writer,
+                        mathematician, and logician, best known for his classic works 
+                        Alice's Adventures in Wonderland and Through the Looking-Glass.</p>
+                </div>
+                
+                <div class="person_info">
+                    <h2>Lewis Carrol</h2>
+                    <a href="person.html?person=person6">learn more</a>      
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+
+    </body>
+
+
+</html>
