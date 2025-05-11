@@ -14,7 +14,6 @@ var user_details = {
     password: password
 }
 
-localStorage.setItem("current_user", JSON.stringify(user_details))
 
 function validate() {
     var input_username = document.getElementById("username").value;
