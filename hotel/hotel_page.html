@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="hotel_page.css">
+
+
+
+    </head>
+
+        <body>
+
+            <div class="nav_bar">
+                <div id="home" onclick="window.location.href='../homepage.html'">
+                    <p>Home</p> 
+                </div>
+
+                <div id="pages">
+                    <a href="../activities/activities_page.html">Activities</a>
+                    <a href="../food/food_page.html">Food</a>
+                    <a style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;" href="../hotel/hotel_page.html">Hotel</a>
+                    <a href="../people/people_page.html">People</a>
+                    <a href="../recipes/recipes_page.html">Recipes</a>
+                    <a href="../map/map_page.html">Map</a>
+                    <a id="login_button" href="../login/login_page.html">Login</a>
+                </div>
+            </div>
+
+
+            <div class="background">
+                    <h2>Find places to stay</h2>
+                </div>
+
+
+            <div class="content">
+
+              <div class="filters">
+                <div>
+                   <p>Filter 1</p> 
+                   <p>This one will be a slider</p>
+                </div>
+                <div>
+                   <p>Filter 2</p> 
+                </div>
+                <div>
+                   <p>Filter 3</p> 
+                </div>
+                <div>
+                   <p>Filter 4</p> 
+                </div>
+                <div>
+                   <p>Filter 5</p> 
+                </div>
+                <div>
+                   <p>Filter 6</p> 
+                </div>
+                
+              </div>
+
+               <div class="card_list">
+
+                
+                    <a class="card_link" href = "hotel.html?place=hilton">                    
+                        <div class="card" >
+                            <div class="image_container">
+                                <img id="image" src="images/hilton.png"></img>
+                            </div>
+                            
+                            <h2>Doubletree by Hilton Hotel and Spa Chester</h2>
+                            <div class="star_container">
+                                <input class="favourite" type="checkbox" data-type="hotel" data-id="hilton">
+                            <span class="star"></span>
+                        </div>
+
+                        </div>
+                    </a>
+                    
+                    <a class="card_link" href = "hotel.html?place=abode">                    
+                        <div class="card" >
+                            <div class="image_container">
+                                <img id="image" src="images/abode.png"></img>
+                            </div>
+                            
+                            <h2>ABode Chester</h2>
+                            <div class="star_container">
+                                <input class="favourite" type="checkbox" data-type="hotel" data-id="abode">
+
+                            <span class="star"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card_link" href = "hotel.html?place=oddfellows">                    
+                        <div class="card" >
+                            <div class="image_container">
+                                <img id="image" src="images/oddfellows.png"></img>
+                            </div>
+                            
+                            <h2>Oddfellows</h2>
+
+                            <div class="star_container">
+                                <input class="favourite" type="checkbox" data-type="hotel" data-id="oddfellows">
+                            <span class="star"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card_link" href = "hotel.html?place=park_royal">                    
+                        <div class="card" >
+                            <div class="image_container">
+                                <img id="image" src="images/park_royal.png"></img>
+                            </div>
+                            
+                            <h2>The Park Royal Hotel</h2>
+
+                            <div class="star_container">
+                                <input class="favourite" type="checkbox" data-type="hotel" data-id="park_royal">
+                            <span class="star"></span>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                </div>
+
+                
+
+            </div>
+
+            <script type="text/javascript" src="hotel_data.js"></script>
+            <script type="text/javascript" src="../toggle_favourite.js"></script>
+
+            <script>
+                var user = localStorage.getItem("current_user");
+
+
+                if(user){
+                    document.getElementById("login_button").innerHTML = "Dashboard"
+                }
+            </script>
+
+
+
+
+
+        </body>
+
+
+</html> 

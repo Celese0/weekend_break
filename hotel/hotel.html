@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="hotel.css">
+
+
+    </head>
+
+    <body>
+
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../homepage.html'">
+                <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+
+        <div class="main_part">
+
+            <div class="image_container">
+                <img id="image" src=""></img>
+            </div>
+
+            <div class="description">
+
+                <h1 id="name">Hotel Name</h1>
+                <h3 id="description">Hotel Description</h3>
+                <a id="book" href="activities">Visit website</a>
+
+            </div>
+
+
+        </div>
+
+        <div id="page_break"></div>
+
+        <div class="extra_info">
+
+            <div class="map_image_container">
+                <img id="map" src="">Map</img>
+            </div>
+
+            <p id="place_desc">Small Place Description</p>
+
+
+
+        </div>
+
+
+        <script type="text/javascript" src="populate_hotel.js"></script>
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+
+
+    </body>
+
+
+
+</html>

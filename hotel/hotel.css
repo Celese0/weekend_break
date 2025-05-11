@@ -1,0 +1,132 @@
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: #2F3645;
+}
+
+.main_part{
+
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.image_container{
+    outline: 2px solid blue;
+    aspect-ratio: 1/1;
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#image{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    aspect-ratio: 1/1;
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4edea;
+    border-radius: 10px;;
+    width: 50%;
+    padding:20px;
+}
+
+.description h3{
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.description h2{
+    margin: 2px;
+}
+
+
+.extra_info{
+    outline: 2px solid #EEEDEB;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EEEDEB;
+
+}
+
+.map_image_container{
+    display: block;
+    outline: 3px solid rgba(47, 54, 69, 0.6);
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+
+}
+
+#place_desc{
+    outline: 2px solid #939185;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #939185;
+    color: #EEEDEB; 
+    font-size: 20px;
+
+}
+
+#book{
+    display: block;
+    outline: 2px solid #939185;
+    border-radius: 4px;
+    background-color: #939185;
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    list-style: none;
+    text-decoration: none;
+    color: #EEEDEB;
+    font-size: large;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+
+}
+
+#book:hover{
+    transform: scale(1.05);
+}
+
+
+#page_break{
+    outline: 2px solid #2F3645;
+    margin: 3vh 0;
+    width: 99%;
+    height:1px;
+    background-color: #2F3645;
+    justify-self: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="food_page.css">
+    </head>
+
+    <body>
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../homepage.html'">
+                <p>Home</p> 
+            </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a style="background-color: #b8b7b1; color: #EEEDEB; font-weight: bold;" href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+
+        <div class="background">
+            <h2>Find places to eat</h2>
+        </div>
+
+
+        <div class="content">
+
+            <div class="filters">
+                <div>
+                    <p>Filter 1</p> 
+                    <p>This one will be a slider</p>
+                </div>
+                <div>
+                    <p>Filter 2</p> 
+                </div>
+                <div>
+                    <p>Filter 3</p> 
+                </div>
+                <div>
+                    <p>Filter 4</p> 
+                </div>
+                <div>
+                    <p>Filter 5</p> 
+                </div>
+                <div>
+                    <p>Filter 6</p> 
+                </div>
+            
+            </div>
+
+            <div class="card_list">
+
+                <a class="card_link" href = "food.html?place=artezzan">                    
+                    <div class="card" >
+                        <div class="image_container">
+                            <img id="image" src="images/artezzan.png"></img>
+                        </div>
+                        
+                        <h2>Artezzan Restaurant & Bar</h2>
+
+                        <div class="star_container">
+                            <input class="favourite" type="checkbox" data-type="food" data-id="artezzan">
+                            <span class="star"></span>
+                        </div>
+
+                        
+                    </div>
+                </a>
+
+                <a class="card_link" href = "food.html?place=brasserie">                    
+                    <div class="card" >
+                        <div class="image_container">
+                            <img id="image" src="images/brasserie.png"></img>
+                        </div>
+                        
+                        <h2>La Brasserie</h2>
+                        <div class="star_container">
+                            <input class="favourite" type="checkbox" data-type="food" data-id="brasserie">
+                            <span class="star"></span>
+                        </div>
+                       
+                    </div>
+                </a>
+
+                <a class="card_link" href = "food.html?place=palm_court">                    
+                    <div class="card" >
+                        <div class="image_container">
+                            <img id="image" src="images/palm_court.png"></img>
+                        </div>
+                        
+                        <h2>Palm Court</h2>
+                        <div class="star_container">
+                            <input class="favourite" type="checkbox" data-type="food" data-id="palm_court">
+                            <span class="star"></span>
+                        </div>
+                        
+                    </div>
+                </a>
+
+                <a class="card_link" href = "food.html?place=turtle_bay">                    
+                    <div class="card" >
+                        <div class="image_container">
+                            <img id="image" src="images/turtle_bay.png"></img>
+                        </div>
+                        
+                        <h2>Turtle Bay</h2>
+                        <div class="star_container">
+                            <input class="favourite" type="checkbox" data-type="food" data-id="turtle_bay">
+                            <span class="star"></span>
+                        </div>
+                        
+                    </div>
+                </a>
+
+                <a class="card_link" href = "food.html?place=cosy_club">                    
+                    <div class="card" >
+                        <div class="image_container">
+                            <img id="image" src="images/cosy_club.png"></img>
+                        </div>
+                        
+                        <h2>Cosy Club</h2>
+
+                        <div class="star_container">
+                            <input class="favourite" type="checkbox" data-type="food" data-id="cosy_club">
+                            <span class="star"></span>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a class="card_link" href = "food.html?place=bella_italia">                    
+                    <div class="card" >
+                        <div class="image_container">
+                            <img id="image" src="images/bella_italia.png"></img>
+                        </div>
+                        
+                        <h2>Bella Italia</h2>
+                        <div class="star_container">
+                            <input class="favourite" type="checkbox" data-type="food" data-id="bella_italia">
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                </a>
+
+                
+
+
+
+                
+                
+            </div>
+            
+            
+            
+        </div>
+        <script type="text/javascript" src="food_data.js"></script>
+        <script type="text/javascript" src="../toggle_favourite.js"></script>
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+
+
+    </body>
+
+</html> 
