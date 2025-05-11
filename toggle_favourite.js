@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let favourites = JSON.parse(localStorage.getItem("favourites")) || {
         food: [],
         hotel: [],
-        activity: []
+        activities: []
     };
 
     checkboxes.forEach(checkbox => {
