@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../navbar.css">
+        <link rel="stylesheet" href="activity.css">
+    </head>
+
+    <body>
+
+        <div class="nav_bar">
+            <div id="home" onclick="window.location.href='../index.html'">
+                   <p>Home</p> 
+                </div>
+
+            <div id="pages">
+                <a href="../activities/activities_page.html">Activities</a>
+                <a href="../food/food_page.html">Food</a>
+                <a href="../hotel/hotel_page.html">Hotel</a>
+                <a href="../people/people_page.html">People</a>
+                <a href="../recipes/recipes_page.html">Recipes</a>
+                <a href="../map/map_page.html">Map</a>
+                <a id="login_button" href="../login/login_page.html">Login</a>
+            </div>
+        </div>
+
+
+        <div class="main_part">
+
+            <div class="image_container">
+                <img id="image" ></p>
+            </div>
+
+            <div class="description">
+
+                <h1 id="name">Attraction Name</h1>
+                <h3 id="description">Attraction Description</h3>
+                <h2>Price:</h2>
+                <P id="price">Price</P>
+                <a id="book" href="activities">Book now</a>
+
+            </div>
+
+
+        </div>
+        <div id="page_break"></div>
+
+        <div class="extra_info">
+
+            <div class="map_image_container">
+                <img id="map" src=""></p>
+            </div>
+
+            <p id="place_desc">Small Place Description</p>
+
+
+
+        </div>
+
+        <script type="text/javascript" src="activity_data.js"></script>
+        <script type="text/javascript" src="populate_activity.js"></script>
+
+        <script>
+            var user = localStorage.getItem("current_user");
+
+
+            if(user){
+                document.getElementById("login_button").innerHTML = "Dashboard"
+            }
+        </script>
+
+
+
+    </body>
+
+
+
+</html>
